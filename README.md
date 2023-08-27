@@ -1,1 +1,1 @@
-# KnowledgeDistillationForModelCompression
+# Knowledge Distillation for Model Compression
