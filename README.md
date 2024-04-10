@@ -1,3 +1,3 @@
 # Knowledge Distillation for Model Compression
 
-Project work done for my MSc
+![image](https://github.com/chitraz/KnowledgeDistillationForModelCompression/assets/40371968/61d02532-9403-4e64-bdd8-ac4555614c64)
