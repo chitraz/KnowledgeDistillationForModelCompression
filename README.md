@@ -5,11 +5,11 @@ This p
 Various KD methods are explored to distill using primaly residual CNNs models on CIFAR-10/100 dataset. In addition a 
 
 
-  - [1](scripts/Distiller.py)
-  - [2](scripts/Dataset.py)
-  - [3](scripts/KD_methods.py)
-  - [4](scripts/Models.py)
-  - [5](scripts/Utils.py)
+  - [Distiller.py](scripts/Distiller.py)
+  - [Dataset.py](scripts/Dataset.py)
+  - [KD_methods.py](scripts/KD_methods.py)
+  - [Models](scripts/Models.py)
+  - [Utils.py](scripts/Utils.py)
 
 
 
