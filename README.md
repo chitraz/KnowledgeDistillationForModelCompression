@@ -1,8 +1,9 @@
 # Knowledge Distillation for Model Compression
 
-This repo [FinalReport_Chitra.pdf](https://github.com/chitraz/KnowledgeDistillationForModelCompression/files/15062925/FinalReport_Chitra.pdf)
+This repo contains the code written to conduct deep learning experiments for my [MSc Project](https://github.com/chitraz/KnowledgeDistillationForModelCompression/files/15062925/FinalReport_Chitra.pdf). Where various KD methods are explored to distill using primaly residual CNNs models on CIFAR-10/100 dataset. In addition a 
 
-Various KD methods are explored to distill using primaly residual CNNs models on CIFAR-10/100 dataset. In addition a 
+
+
 
   - [Distiller.py](scripts/Distiller.py)
   - [Dataset.py](scripts/Dataset.py)
