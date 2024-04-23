@@ -13,7 +13,7 @@ This repo contains the code written to conduct deep learning experiments for my 
 
 
 
-## Framework
+## SRDwithDIST Framework
 
 <img src="https://github.com/chitraz/KnowledgeDistillationForModelCompression/assets/40371968/61d02532-9403-4e64-bdd8-ac4555614c64" width="800" />
 
@@ -23,22 +23,27 @@ This repo contains the code written to conduct deep learning experiments for my 
 ## Main Results 
 
 | Teacher <br> Student | WRN-40-4 [8.97M] <br> WRN-16-4 [2.77M] | WRN-40-2 [2.26M] <br> WRN-40-1 [0.57M] | WRN-40-4 [8.97M] <br> WRN-16-2 [0.70M] | WRN-40-4 [8.97M] <br> MobileNet-V2 [2.24M]| ResNet-18 [11.22M] <br> MobileNet-V2 [2.24M]|
-| :----------- | :-----: | :-----: | :-----: | :-----: | :-----: |
+| :------------- | :-----: | :-----: | :-----: | :-----: | :-----: |
 | Teacher | 79.16 | 76.68 | 79.16 | 79.16 | 78.13 |
 | Student     | 76.91 | 71.3  | 73.45 | 69.66 | 69.66 |
-| KD          | 78.65 | 73.56 | 75.01 | 72.93 | 73.4  |
-| FitNet      | 79.15 | 74.11 | 74.66 | 73.84 | 73.19 |
-| AT          | 79.05 | 73.9  | 74.38 | \-    | \-    |
-| DML         | 78.69 | 73.72 | 74.76 | 72.2  | 72.26 |
-| DIST        | 79.43 | 74.44 | 75.5  | 73.44 | 72.68 |
-| SRD         | 79.53 | 74.67 | 75.94 | \-    | \-    |
-| SRDwithDIST | 80.39 | 74.43 | 76.19 | \-    | \-    |
+| KD [[paper](https://arxiv.org/abs/1503.02531)]         | 78.65 | 73.56 | 75.01 | 72.93 | 73.4  |
+| FitNet [[paper](https://arxiv.org/abs/1412.6550)]      | 79.15 | 74.11 | 74.66 | 73.84 | 73.19 |
+| AT [[paper](https://arxiv.org/abs/1612.03928)]          | 79.05 | 73.9  | 74.38 | \-    | \-    |
+| DML [[paper](https://arxiv.org/abs/1706.00384)]         | 78.69 | 73.72 | 74.76 | 72.2  | 72.26 |
+| DIST [[paper](https://arxiv.org/abs/2205.10536), [GitHub](https://github.com/hunto/DIST_KD)]        | 79.43 | 74.44 | 75.5  | 73.44 | 72.68 |
+| SRD [[paper](https://arxiv.org/abs/2205.06701), [GitHub](https://github.com/jingyang2017/SRD_ossl)]         | 79.53 | **74.67** | 75.94 | \-    | \-    |
+| SRDwithDIST | **80.39** | 74.43 | **76.19** | \-    | \-    |
 
 
-## Running
+## Installation
+
+### Requirements
+
+
+### Example
 
 
 ## Future works  
-
-  - Expore KD alongside other compression techniques: Pruning/Quantisation 
-  - KD for compressing Object Detection models
+  - Get results on ImageNet to see how the methods scale
+  - Explore KD alongside other compression techniques: Pruning/Quantisation 
+  - Explore KD for compressing Object Detection models
