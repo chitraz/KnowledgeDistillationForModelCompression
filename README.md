@@ -28,7 +28,7 @@ This repo contains the code written to conduct deep learning experiments for my 
 | Student     | 76.91 | 71.3  | 73.45 | 69.66 | 69.66 |
 | KD [[paper](https://arxiv.org/abs/1503.02531)]         | 78.65 | 73.56 | 75.01 | 72.93 | 73.4  |
 | FitNet [[paper](https://arxiv.org/abs/1412.6550)]      | 79.15 | 74.11 | 74.66 | 73.84 | 73.19 |
-| AT [[paper](https://arxiv.org/abs/1612.03928)]          | 79.05 | 73.9  | 74.38 | \-    | \-    |
+| AT [[paper](https://arxiv.org/abs/1612.03928), [GitHub](https://github.com/szagoruyko/attention-transfer)]          | 79.05 | 73.9  | 74.38 | \-    | \-    |
 | DML [[paper](https://arxiv.org/abs/1706.00384)]         | 78.69 | 73.72 | 74.76 | 72.2  | 72.26 |
 | DIST [[paper](https://arxiv.org/abs/2205.10536), [GitHub](https://github.com/hunto/DIST_KD)]        | 79.43 | 74.44 | 75.5  | 73.44 | 72.68 |
 | SRD [[paper](https://arxiv.org/abs/2205.06701), [GitHub](https://github.com/jingyang2017/SRD_ossl)]         | 79.53 | **74.67** | 75.94 | \-    | \-    |
