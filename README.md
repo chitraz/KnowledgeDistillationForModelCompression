@@ -1,15 +1,13 @@
 # Knowledge Distillation for Model Compression
 
-This repo contains the code written to conduct deep learning experiments for my [MSc Project](https://github.com/chitraz/KnowledgeDistillationForModelCompression/files/15062925/FinalReport_Chitra.pdf). Where various KD methods are explored to distill using primaly residual CNNs models on CIFAR-10/100 dataset. In addition a 
+This repo contains code written for my [MSc Project](https://github.com/chitraz/KnowledgeDistillationForModelCompression/files/15062925/FinalReport_Chitra.pdf). More specfically: 
+  - PyTorch Implementation ([Distiller.py](scripts/Distiller.py), [Utils.py](scripts/Utils.py), [Dataset.py](scripts/Dataset.py), [Models](scripts/Models.py), [KD_methods.py](scripts/KD_methods.py)) to  
+  - Shell Scripts to run the experiments conducted and Juperter Noteboks for visualisations for report
+    
 
 
 
-
-  - [Distiller.py](scripts/Distiller.py)
-  - [Dataset.py](scripts/Dataset.py)
-  - [KD_methods.py](scripts/KD_methods.py)
-  - [Models](scripts/Models.py)
-  - [Utils.py](scripts/Utils.py)
+Where various KD methods are explored to distill using primaly residual CNNs models on CIFAR-10/100 dataset. In addition a 
 
 
 
@@ -22,7 +20,7 @@ This repo contains the code written to conduct deep learning experiments for my 
 
 ## Main Results 
 
-| Teacher <br> Student | WRN-40-4 [8.97M] <br> WRN-16-4 [2.77M] | WRN-40-2 [2.26M] <br> WRN-40-1 [0.57M] | WRN-40-4 [8.97M] <br> WRN-16-2 [0.70M] | WRN-40-4 [8.97M] <br> MobileNet-V2 [2.24M]| ResNet-18 [11.22M] <br> MobileNet-V2 [2.24M]|
+| Teacher Architecture <br> [#parameters] <br> Student Architecture <br> [#parameters] | WRN-40-4 <br> [8.97M] <br> WRN-16-4 <br> [2.77M] | WRN-40-2 <br> [2.26M] <br> WRN-40-1 <br> [0.57M] | WRN-40-4 <br> [8.97M] <br> WRN-16-2 <br> [0.70M] | WRN-40-4 <br> [8.97M] <br> MobileNet-V2 <br> [2.24M]| ResNet-18 <br> [11.22M] <br> MobileNet-V2 <br> [2.24M]|
 | :------------- | :-----: | :-----: | :-----: | :-----: | :-----: |
 | Teacher | 79.16 | 76.68 | 79.16 | 79.16 | 78.13 |
 | Student     | 76.91 | 71.3  | 73.45 | 69.66 | 69.66 |
