@@ -20,6 +20,8 @@ Where various KD methods are explored to distill using primaly residual CNNs mod
 
 ## Main Results 
 
+Shows top-1 accuracies on CIFAR-100. 
+
 | Teacher Architecture <br> [#parameters] <br> Student Architecture <br> [#parameters] | WRN-40-4 <br> [8.97M] <br> WRN-16-4 <br> [2.77M] | WRN-40-2 <br> [2.26M] <br> WRN-40-1 <br> [0.57M] | WRN-40-4 <br> [8.97M] <br> WRN-16-2 <br> [0.70M] | WRN-40-4 <br> [8.97M] <br> MobileNet-V2 <br> [2.24M]| ResNet-18 <br> [11.22M] <br> MobileNet-V2 <br> [2.24M]|
 | :------------- | :-----: | :-----: | :-----: | :-----: | :-----: |
 | Teacher | 79.16 | 76.68 | 79.16 | 79.16 | 78.13 |
