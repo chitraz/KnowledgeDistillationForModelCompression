@@ -1,7 +1,7 @@
 # Knowledge Distillation for Model Compression
 
 This repo contains code written for my [MSc Project](https://github.com/chitraz/KnowledgeDistillationForModelCompression/files/15062925/FinalReport_Chitra.pdf). More specfically: 
-  - PyTorch Implementation ([Distiller.py](scripts/Distiller.py), [Utils.py](scripts/Utils.py), [Dataset.py](scripts/Dataset.py), [Models](scripts/Models.py), [KD_methods.py](scripts/KD_methods.py)) to  
+  - PyTorch Implementation ([Distiller.py](scripts/Distiller.py), [Utils.py](scripts/Utils.py), [Dataset.py](scripts/Dataset.py), [Models.py](scripts/Models.py), [KD_methods.py](scripts/KD_methods.py)) to conduct knowledge distillation experiemnts on CIFAR-10/100 or ImageNet-1k using various residual CNN networks. 
   - Shell Scripts to run the experiments conducted and Juperter Noteboks for visualisations for report
     
 
