@@ -12,15 +12,13 @@ Where various KD methods are explored to distill using primaly residual CNNs mod
 
 
 ## SRDwithDIST Framework
+This is a simple modification made to the [SRD](https://arxiv.org/abs/2205.06701) method where instead of the mse(), between the teacher's logits and cross-network logits, a correlation based loss, following [DIST](https://arxiv.org/abs/2205.10536), is used to relax the matching. Given a batch of teacher logits and cross-network logits, they are matched row-wise and column-wise using the pearson correlation coefficient in order to align their relative rankings.   
 
-<img src="https://github.com/chitraz/KnowledgeDistillationForModelCompression/assets/40371968/61d02532-9403-4e64-bdd8-ac4555614c64" width="800" />
+<img src="https://github.com/chitraz/KnowledgeDistillationForModelCompression/assets/40371968/61d02532-9403-4e64-bdd8-ac4555614c64" width="1000" />
 
+## Main results on CIFAR-100 
 
-
-
-## Main Results 
-
-Shows top-1 accuracies on CIFAR-100. 
+Shows top-1 classification accuracies on CIFAR-100. See [run_compareKD.sh](run_compareKD.sh) for the commands used. 
 
 | Teacher Architecture <br> [#parameters] <br> Student Architecture <br> [#parameters] | WRN-40-4 <br> [8.97M] <br> WRN-16-4 <br> [2.77M] | WRN-40-2 <br> [2.26M] <br> WRN-40-1 <br> [0.57M] | WRN-40-4 <br> [8.97M] <br> WRN-16-2 <br> [0.70M] | WRN-40-4 <br> [8.97M] <br> MobileNet-V2 <br> [2.24M]| ResNet-18 <br> [11.22M] <br> MobileNet-V2 <br> [2.24M]|
 | :------------- | :-----: | :-----: | :-----: | :-----: | :-----: |
@@ -35,11 +33,17 @@ Shows top-1 accuracies on CIFAR-100.
 | SRDwithDIST | **80.39 (+3.48)** | 74.43 (+3.13) | **76.19 (+2.74)** | \-    | \-    |
 
 *missing some entries due to implementation limitation: currently using a simple 1x1 conv adaptor to handel teacher and student shape mismatch for thoses methods so can only handel 
+ 
 
 ## Installation
 
-### Requirements
-
+### Environment
+ The experiments were conducted on a personal PC with: 
+ - Ubuntu 22.04
+ - Python 3.8
+ - PyTorch 2.0
+ - CPU: Ryzen 9 5900x
+ - GPU: Nvidia RTX 3090
 
 ### Example
 
